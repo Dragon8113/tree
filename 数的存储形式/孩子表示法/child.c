@@ -34,7 +34,7 @@ typedef struct      //树
       8   9        7     6
             2          10   
  */
-void InitCTree(CTree *tree){    //初始化
+void InitCTree(CTree *tree){    //初始化（测试）
     ElemType data[] = { 5, 1, 3, 4, 8, 9, 7, 6, 2, 10};
     int length = sizeof(data) / sizeof(data[0]);
 
