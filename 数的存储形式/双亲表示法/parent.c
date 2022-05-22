@@ -30,7 +30,7 @@ typedef struct{     //树
     4      5      6
   7  8       2   3   9   
  */
-Status InitTree(PTree *tree){       //层次表示法: 1 4 5 6 7 8 2 3 9
+Status InitTree(PTree *tree){       //层次表示法: 1 4 5 6 7 8 2 3 9（测试）
     ElemType data[] = { 1, 4, 5, 6, 7, 8, 2, 3, 9};
     int length = sizeof(data)/ sizeof(data[0]);
 
