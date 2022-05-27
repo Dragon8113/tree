@@ -8,13 +8,13 @@
 
 typedef char ElemType;
 
-typedef enum {Link, Thread}  PointTag;
+typedef enum {Link, Thread}  PointTag;  //枚举，Link表示此时孩子存在，Thread表示此时孩子为线索
 
 typedef struct ThreadBiNode
 {
     ElemType data;
-    struct ThreadBiNode *lChild, *rChild;
-    PointTag lTag, rTag;
+    struct ThreadBiNode *lChild, *rChild;   //创建 节点的 左右孩子
+    PointTag lTag, rTag;        //创建此时 左右孩子的tag，用于判断 此时孩子为 Link 还是 Thread
 } ThreadBiNode, *ThreadBiTree;
 
 /* 测试二叉树 
